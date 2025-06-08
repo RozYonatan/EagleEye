@@ -8,13 +8,22 @@ using System.Threading.Tasks;
 
 namespace AgentsDB
 {
-    internal class Agent
+    public class Agent
     {
-        private int id {  get; set; }
-        private string codeName { get; set; }
-        private string realName { get; set; }
-        private string location { get; set; }
-        private string status { get; set; }
-        private int missionsCompleted { get; set; }
+        public int id {  get; set; }
+        public string codeName { get; set; }
+        public string realName { get; set; }
+        public string location { get; set; }
+        public string status { get; set; }
+        public int missionsCompleted { get; set; }
+        public Agent(string codeName, string realName, string location, string status, int missionsCompleted)
+        {
+ 
+            this.codeName = codeName;
+            this.realName = realName;
+            this.location = location;
+            this.status = status;
+            this.missionsCompleted = missionsCompleted;
+        }
     }
 }

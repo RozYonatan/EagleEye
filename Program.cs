@@ -10,6 +10,8 @@ namespace AgentsDB
     {
         static void Main(string[] args)
         {
+            AgentDAL dal = new AgentDAL();
+
         }
     }
 }
